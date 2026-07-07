@@ -41,7 +41,7 @@ export function Sidebar() {
   const pathname = usePathname();
   const router = useRouter();
   const supabase = createClient();
-  const { user, loading } = useRole();
+  const { user } = useRole();
   const { theme, toggleTheme } = useTheme();
 
   const menuItems = allMenuItems.filter((item) =>

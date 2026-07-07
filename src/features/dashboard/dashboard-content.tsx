@@ -7,7 +7,7 @@ import { Header } from "@/components/layout/header";
 import { Badge } from "@/components/ui/badge";
 import { Package, Users, Truck, ShoppingCart, FileText, TrendingUp, AlertTriangle, ArrowDown, ArrowUp, Warehouse } from "lucide-react";
 import { BarChart } from "@/components/bar-chart";
-import { formatCurrency, formatNumber, formatDate } from "@/lib/utils";
+import { formatCurrency, formatNumber } from "@/lib/utils";
 
 interface DashboardStats {
   totalProducts: number;

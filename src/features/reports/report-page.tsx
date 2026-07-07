@@ -39,7 +39,7 @@ export default function ReportPage() {
   const [salesData, setSalesData] = useState<SalesReport[]>([]);
   const [purchaseData, setPurchaseData] = useState<PurchaseReport[]>([]);
   const [stockData, setStockData] = useState<StockReport[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
   const [filter, setFilter] = useState("all");
   const [monthFilter, setMonthFilter] = useState(() => {
     const now = new Date();

@@ -55,7 +55,7 @@ export default function StockPage() {
     if (!product) { setSaving(false); return; }
 
     let newStock = product.stock;
-    let movementType: "in" | "out" | "adjustment" = dialogType;
+    const movementType: "in" | "out" | "adjustment" = dialogType;
     let movementQty = formData.qty;
 
     if (dialogType === "in") {

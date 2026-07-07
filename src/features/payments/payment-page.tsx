@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Loading } from "@/components/loading";
-import { Plus, CreditCard } from "lucide-react";
+import { Plus } from "lucide-react";
 import { ColumnDef } from "@tanstack/react-table";
 import { Payment, Invoice } from "@/types";
 import { formatCurrency, formatDate } from "@/lib/utils";
@@ -100,10 +100,6 @@ export default function PaymentPage() {
     }
     setSaving(false);
     fetchData();
-  }
-
-  function getInvoiceNumber(id: string) {
-    return invoices.find((i) => i.id === id)?.number || payments.find((p) => p.invoice_id === id)?.invoice ? (payments.find((p) => p.invoice_id === id)?.invoice as any)?.number : "-";
   }
 
   const methodLabels: Record<string, string> = {

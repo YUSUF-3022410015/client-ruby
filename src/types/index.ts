@@ -121,6 +121,7 @@ export interface Payment {
   date: string;
   notes: string | null;
   created_at: string;
+  invoice?: Invoice;
 }
 
 export interface StockMovement {

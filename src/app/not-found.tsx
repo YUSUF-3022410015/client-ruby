@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { FileQuestion, ArrowLeft, Home } from "lucide-react";
 import Link from "next/link";
@@ -20,18 +19,14 @@ export default function NotFound() {
             </div>
           </div>
           <div className="flex justify-center gap-3">
-            <Button variant="outline" size="sm" asChild>
-              <Link href="/dashboard">
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Kembali
-              </Link>
-            </Button>
-            <Button size="sm" asChild>
-              <Link href="/dashboard">
-                <Home className="h-4 w-4 mr-2" />
-                Dashboard
-              </Link>
-            </Button>
+            <Link href="/dashboard" className="inline-flex items-center justify-center gap-2 rounded-md border border-input bg-background px-3 py-1.5 text-xs font-medium shadow-sm hover:bg-accent hover:text-accent-foreground">
+              <ArrowLeft className="h-4 w-4" />
+              Kembali
+            </Link>
+            <Link href="/dashboard" className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground shadow hover:bg-primary/90">
+              <Home className="h-4 w-4" />
+              Dashboard
+            </Link>
           </div>
         </CardContent>
       </Card>
